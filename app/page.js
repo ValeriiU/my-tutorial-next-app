@@ -17,11 +17,12 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              // src="/vercel.svg"
+              src="https://res.cloudinary.com/daizdx4p7/image/upload/v1697900893/buick_enclave_uga3b2.jpg"
               alt="Vercel Logo"
               className="dark:invert"
-              width={100}
-              height={24}
+              width={200}
+              height={60}
               priority
             />
           </a>
