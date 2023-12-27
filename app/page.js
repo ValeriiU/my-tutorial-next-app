@@ -25,6 +25,15 @@ export default function Home() {
               height={60}
               priority
             />
+            <Image
+              // src="/vercel.svg"
+              src="https://res.cloudinary.com/daizdx4p7/image/upload/v1697900893/buick_enclave_uga3b2.jpg"
+              alt="Vercel Logo"
+              className="dark:invert"
+              width={200}
+              height={100}
+              priority
+            />
           </a>
         </div>
       </div>
