@@ -4,11 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
+// було так в дашборді туторіала
+// const links = [
+//   { name: "Home", href: "/board" },
+//   { name: "Catalog", href: "/board/catalog" },
+//   { name: "Favorite", href: "/board/favorite" },
+//   { name: "Admin", href: "/board/admin" },
+// ];
+
 const links = [
-  { name: "Home", href: "/board" },
-  { name: "Catalog", href: "/board/catalog" },
-  { name: "Favorite", href: "/board/favorite" },
-  { name: "Admin", href: "/board/admin" },
+  { name: "Home", href: "/" },
+  { name: "Catalog", href: "/catalog" },
+  { name: "Favorite", href: "/favorite" },
+  { name: "Admin", href: "/admin" },
 ];
 
 export default function NavLinks() {
