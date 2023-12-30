@@ -2,8 +2,8 @@
 //   children: React.ReactNode;
 // }
 
-const Container = ({ children }) => {
-  return <div className="mx-auto max-w-7xl">{children}</div>;
-};
+// const Container = ({ children }) => {
+//   return <div className="mx-auto max-w-7xl">{children}</div>;
+// };
 
-export default Container;
+// export default Container;

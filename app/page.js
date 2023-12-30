@@ -9,7 +9,6 @@ export default function Home() {
           <a href="/">Start Page</a>
           <div >
             <a href="/probaboard">Probaboard SideNav</a>
-      
           </div>
         </div>
       </div>

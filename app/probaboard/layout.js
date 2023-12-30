@@ -7,7 +7,7 @@ import FooterPage from '../ui/probaboard/FooterPage/FooterPage';
 export default function Layout({ children }) {
   return (
     <>
-      <div >
+      <div className="flex-col h-screen md:flex-row ">
           <header>
               < HeaderPage />
       </header> 

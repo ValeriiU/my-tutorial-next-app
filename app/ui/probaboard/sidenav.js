@@ -7,12 +7,12 @@ import NavLinks from '@/app/ui/probaboard/nav-links';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col px-3  py-4 md:px-2 bg-white" >
+    <div className="flex h-full  flex-col px-3  py-4 md:px-2 bg-white" >
       <Link
-        className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
+        className="mb-2 flex h-20 items-center justify-start rounded-md bg-blue-600 p-4 md:h-20"
         href="/"
       >
-        <div className="w-32 text-white md:w-40">
+        <div className=" justify-between flex w-32 text-white md:w-40 ">
           <p>START Page </p>
         </div>
       </Link>
