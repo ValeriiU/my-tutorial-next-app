@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import NavLinks from '@/app/ui/probaboard/nav-links';
+import Link from "next/link";
+import NavLinks from "./nav-links";
 // import AcmeLogo from '@/app/ui/acme-logo';
 // import { PowerIcon } from '@heroicons/react/24/outline';
 // добавить функцию выхода из системы
@@ -7,7 +7,7 @@ import NavLinks from '@/app/ui/probaboard/nav-links';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full  flex-col px-3  py-4 md:px-2 bg-white" >
+    <div className="flex h-full  flex-col px-3  py-4 md:px-2 bg-white">
       <Link
         className="mb-2 flex h-20 items-center justify-start rounded-md bg-blue-600 p-4 md:h-20"
         href="/"
@@ -22,9 +22,10 @@ export default function SideNav() {
         {/* добавить функцию выхода из системы */}
         <form
           action={async () => {
-            'use server';
+            "use server";
             await signOut();
-          }}>
+          }}
+        >
           <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
             {/* <PowerIcon className="w-6" /> */}
             <div className="hidden md:block">
