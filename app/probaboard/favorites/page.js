@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p >Favorites Page</p>;
+  return <p className="mb-4 text-xl md:text-2xl" >Favorites Page</p>;
 }
