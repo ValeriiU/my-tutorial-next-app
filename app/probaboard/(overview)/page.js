@@ -8,9 +8,7 @@
 // import { fetchRevenue } from '@/app/lib/data';
 import ItemCards from '../../ui/probaboard/item-card'
 import { Suspense } from 'react';
-
 import  ListSkeleton  from '../../ui/probaboard/ListSkeleton/ListSkeleton';
- 
 export default async function Page() {
     // const revenue = await fetchRevenue();
     // const latestInvoices = await fetchLatestInvoices();
