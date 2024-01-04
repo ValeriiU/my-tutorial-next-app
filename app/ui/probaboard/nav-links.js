@@ -14,20 +14,25 @@ const links = [
     href: '/probaboard/favorites',
 
     },
-   {
-    name: 'Invoices',
-    href: '/probaboard/invoices',
+  //  {
+  //   name: 'Invoices',
+  //   href: '/probaboard/invoices',
 
-    },
+  //   },
 
-    {
-        name: 'Customers',
-        href: '/probaboard/customers' 
-  },
-      {
-        name: 'Cart',
-        href: '/probaboard/cart' 
-    },
+  //   {
+  //       name: 'Customers',
+  //       href: '/probaboard/customers' 
+  // },
+  //     {
+  //       name: 'Cart',
+  //       href: '/probaboard/cart' 
+  // },
+{
+    name: 'Admin Page',
+    href: '/admin',
+
+    },  
 ];
 
 export default function NavLinks() {

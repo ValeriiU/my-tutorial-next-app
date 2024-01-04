@@ -5,28 +5,28 @@ import clsx from 'clsx';
 export default async function ItemCards() { // Remove props
   const CardsCatalog = await fetchCatalog();   
   return (
-    <div className="flex w-full flex-col md:col-span-4">
+    <div className="flex flex-col ">
       <h2 > Item Cards </h2>
-      <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
-        <div className="bg-white px-6">
+
+        <div className="bg-white px-6 flex flex-row grid-flow-row">
           {CardsCatalog.map((fetchCatalog, i) => {
             return (
               <div
                 key={fetchCatalog.id}
                 className={clsx(
-                  'flex flex-col items-center justify-between py-4',
-                  {
-                    'border-t': i !== 0,
-                  },
+                  'flex  flex-row items-center justify-between py-4',
+                //   {
+                //     'border-t': i !== 0,
+                //   },
                 )}
               >
-                <div className="flex items-center">
+                <div className="flex w-270 h-300 flex-col items-center justify-between  bg-white">
                   <Image
                     src={fetchCatalog.img_url}
                     alt={`${fetchCatalog.prise.toString()}'s profile picture`}
                     className="mr-4 "
-                    // width={130}
-                    // height={100}
+                    width={170}
+                    height={170}
                   />
                   {/* <div className="min-w-0">
                     <p className="truncate text-sm font-semibold md:text-base">
@@ -36,10 +36,15 @@ export default async function ItemCards() { // Remove props
                       {invoice.email}
                     </p>
                   </div> */}
-                </div>
-                <p className="truncate text-sm font-medium md:text-base">
+                    <p className="flex items-center justify-between border-2 border-color: rgb(0 0 0)   mt-2"> MODEL:  
+                  {fetchCatalog.make}
+                        </p>
+                          <p className="flex items-center justify-between border-2 border-color: rgb(0 0 0)   mt-2"> PRISE:  
                   {fetchCatalog.prise}
-                </p>
+                      </p>
+
+                </div>
+               
               </div>
             );
           })}
@@ -48,7 +53,7 @@ export default async function ItemCards() { // Remove props
           {/* <ArrowPathIcon className="h-5 w-5 text-gray-500" /> */}
           {/* <h3 className="ml-2 text-sm text-gray-500 ">Updated just now</h3> */}
         {/* </div> */}
-      </div>
+      
     </div>
   );
 }
