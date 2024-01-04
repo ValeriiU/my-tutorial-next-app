@@ -11,7 +11,7 @@ export default async function ItemCards() { // Remove props
         <div className="bg-white px-6 flex flex-row grid-flow-row">
           {CardsCatalog.map((fetchCatalog, i) => {
             return (
-              <div
+              <ul
                 key={fetchCatalog.id}
                 className={clsx(
                   'flex  flex-row items-center justify-between py-4',
@@ -20,7 +20,7 @@ export default async function ItemCards() { // Remove props
                 //   },
                 )}
               >
-                <div className="flex w-270 h-300 flex-col items-center justify-between  bg-white">
+                <li className="flex w-270 h-300 flex-col items-center justify-between  bg-white">
                   <Image
                     src={fetchCatalog.img_url}
                     alt={`${fetchCatalog.prise.toString()}'s profile picture`}
@@ -38,14 +38,14 @@ export default async function ItemCards() { // Remove props
                   </div> */}
                     <p className="flex items-center justify-between border-2 border-color: rgb(0 0 0)   mt-2"> MODEL:  
                   {fetchCatalog.make}
-                        </p>
-                          <p className="flex items-center justify-between border-2 border-color: rgb(0 0 0)   mt-2"> PRISE:  
+                    </p>
+                    <p className="flex items-center justify-between border-2 border-color: rgb(0 0 0)   mt-2"> PRISE:  
                   {fetchCatalog.prise}
-                      </p>
+                    </p>
 
-                </div>
+                </li>
                
-              </div>
+              </ul>
             );
           })}
         </div>
