@@ -23,6 +23,10 @@ const links = [
     {
         name: 'Customers',
         href: '/probaboard/customers' 
+  },
+      {
+        name: 'Cart',
+        href: '/probaboard/cart' 
     },
 ];
 
@@ -44,7 +48,7 @@ export default function NavLinks() {
           )}
         >
             {/* <LinkIcon className="w-6" /> */}
-            <p className="hidden md:block">{link.name}</p>
+            <p className="">{link.name}</p>
           </Link>
         );
       })}

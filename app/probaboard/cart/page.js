@@ -1,4 +1,4 @@
 
 export default function Page() {
-  return <p>Cart Page</p>;
+  return <p className="mb-4 text-xl md:text-2xl">Cart Page</p>;
 }
