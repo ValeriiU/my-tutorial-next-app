@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <div className="w-full flex-none md:w-64">
             <SideNav />
       </div>
-          <div className="flex-grow p-3 md:overflow-y-auto md:p-3">
+          <div className="flex-grow  p-3 md:overflow-y-auto md:p-3">
             <Suspense>{children}</Suspense> </div>
         </div>
         <div >
