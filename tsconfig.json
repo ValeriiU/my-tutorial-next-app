@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -28,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/probaboard/admin/page.tsx", "app/ui/admin/Button/index.jsx", "app/ui/admin/Button/Button.jsx"  ],
+  ],
   "exclude": [
     "node_modules"
   ]

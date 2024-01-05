@@ -15,6 +15,15 @@ export const metadata = {
   description: "My Admin Page",
 };
 
+interface CloudinaryResource {
+  context?: {
+    alt?: string;
+    caption?: string;
+  };
+  public_id: string;
+  secure_url: string;
+}
+
 async function AdminPage() {
   const { resources: images } = await cloudinary.api.resources_by_tag(
     "nextjs-server-actions-upload-images",
