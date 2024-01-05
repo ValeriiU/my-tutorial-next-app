@@ -8,7 +8,7 @@ import { Suspense } from 'react';
 export default function Layout({ children }) {
   return (
     <Suspense>
-      <div className="flex-col h-screen md:flex-row ">
+      <div className="flex-col md:flex-row p-5 ">
           <header>
               < HeaderPage />
       </header> 
@@ -16,12 +16,13 @@ export default function Layout({ children }) {
         <div className="w-full flex-none md:w-64">
             <SideNav />
       </div>
-          <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+          <div className="flex-grow p-3 md:overflow-y-auto md:p-3">
             <Suspense>{children}</Suspense> </div>
         </div>
-          <footer>
+        <div >
+          <footer  >
               <FooterPage />
-          </footer>
+          </footer></div>
       </div>
     </Suspense>
 

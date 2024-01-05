@@ -1,14 +1,10 @@
 import { fetchCatalog } from "../../lib/data";
 import Image from "next/image";
 import clsx from "clsx";
-import Card from "./Item-card";
+
 
 export default async function ItemCards() {
-    // Remove props
-    
-    <>
-          <Card car={Card.id} />
-    </>
+  // Remove props
   const CardsCatalog = await fetchCatalog();
   return (
     <div className="flex flex-col ">
