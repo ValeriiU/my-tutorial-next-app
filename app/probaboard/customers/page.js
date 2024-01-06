@@ -46,7 +46,7 @@ export default function Page() {
             <img src={secureUrl} alt="Uploaded image" />
           </div>
           <p>Selected file: {originalFilename}</p>
-          <p>{secureUrl}</p>
+          <p>Secure url: {secureUrl}</p>
           <button
             onClick={handleOnClick}
             className="inline-block py-2 px-4 rounded-full font-semibold uppercase text-white bg-slate-600 hover:bg-slate-500"
