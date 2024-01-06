@@ -1,5 +1,6 @@
 import { revalidatePath } from "next/cache";
 import { v2 as cloudinary } from "cloudinary";
+import { CldUploadWidget } from "next-cloudinary";
 
 import CldImage from "../../ui/admin/CldImage";
 import Button from "../../ui/admin/Button";
@@ -56,8 +57,7 @@ async function AdminPage() {
 
   return (
     <>
-      <p>Admin Page</p>
-
+      <p>Admin Page</p>;
       <h2 className="text-xl font-bold mb-4">Add a New Image</h2>
       <form
         action={create}
