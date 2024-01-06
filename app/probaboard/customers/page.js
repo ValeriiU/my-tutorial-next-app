@@ -10,6 +10,9 @@ export default function Page() {
   // const myPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
   // const { CLOUDINARY_UPLOAD_PRESET } = process.env;
   // console.log(CLOUDINARY_UPLOAD_PRESET);
+  function handleOnClick() {
+    setSecureUrl("");
+  }
 
   return (
     <>
@@ -40,6 +43,12 @@ export default function Page() {
             <img src={secureUrl} alt="Uploaded image" />
           </div>
           <p>{secureUrl}</p>
+          <button
+            onClick={handleOnClick}
+            className="inline-block py-2 px-4 rounded-full font-semibold uppercase text-white bg-slate-600 hover:bg-slate-500"
+          >
+            Ok
+          </button>
         </>
       )}
 
