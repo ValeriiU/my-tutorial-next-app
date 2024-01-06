@@ -55,31 +55,6 @@ export default function Page() {
           </button>
         </>
       )}
-
-      {/* <CldUploadWidget
-        uploadPreset="imhlj8iy"
-        onSuccess={(result, { widget }) => {
-          setResource(result?.info);
-
-          widget.close();
-        }}
-      >
-        {({ open }) => {
-          function handleOnClick() {
-            setResource(undefined);
-            open();
-          }
-          return (
-            <button
-              onClick={handleOnClick}
-              className="inline-block py-2 px-4 rounded-full font-semibold uppercase text-white bg-slate-600 hover:bg-slate-500"
-            >
-              Upload Image
-            </button>
-          );
-        }}
-      </CldUploadWidget> */}
-      {/* <p>{imageUrl}</p> */}
     </>
   );
 }
