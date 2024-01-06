@@ -23,8 +23,8 @@ const HeaderPage = () => {
               </svg> */}
               <div class="absolute inset-y-0 right-0">
   <button type="submit" class="inline-flex aspect-square w-10 items-center justify-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 group-invalid:pointer-events-none group-invalid:opacity-80">
-    <span class="sr-only">search</span>
-    <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-search h-4 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <span className="absolute w-1 h-1 p-0 m--1 overflow-hidden clip-rect(0, 0, 0, 0) whitespace-nowrap border-0">search</span>
+    <svg xmlns="http://www.w3.org/2000/svg" className="lucide lucideSearch h-4 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"></circle>
       <path d="m21 21-4.3-4.3"></path>
     </svg>

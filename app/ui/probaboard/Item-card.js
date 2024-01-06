@@ -20,19 +20,19 @@ export default async function ItemCards() {
             <ul
               key={fetchCatalog.id}
               className={clsx(
-                "w-370 text-decoration-none mt-0 mb-0 ml-0 mr-0 cursor-pointer "
+                " text-decoration-none mt-0 mb-0 ml-0 mr-0 cursor-pointer "
                 //   {
                 //     'border-t': i !== 0,
                 //   },
               )}
             >
-              <li className="flex size-2.5 hover:size-full flex-col  items-center justify-between  bg-white box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);">
+              <li className="  mb-3 rounded-lg bg-center bg-cover bg-no-repeat object-cover cursor-pointer">
                 <Image
                   src={fetchCatalog.img_url}
                   alt={`${fetchCatalog.prise.toString()}'s profile picture`}
-                  className="m-4 size-2.5 hover:size-full "
-                  width={170}
-                  height={170}
+                  className="rounded-xl block w-[274px] h-[254px]   "
+                  width={274}
+                  height={254}
                 />
                 {/* <div className="min-w-0">
                     <p className="truncate text-sm font-semibold md:text-base">
