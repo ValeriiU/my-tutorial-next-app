@@ -5,13 +5,15 @@ import { useState } from "react";
 
 export default function Page() {
   const [secureUrl, setSecureUrl] = useState("");
-
+  const [originalFilename, setOriginalFilename] = useState("");
+  console.log(originalFilename);
   // console.log(imageUrl);
   // const myPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
   // const { CLOUDINARY_UPLOAD_PRESET } = process.env;
   // console.log(CLOUDINARY_UPLOAD_PRESET);
   function handleOnClick() {
     setSecureUrl("");
+    setOriginalFilename("");
   }
 
   return (
@@ -23,6 +25,7 @@ export default function Page() {
         onSuccess={(results) => {
           console.log("secure_url", results.info.secure_url);
           setSecureUrl(results.info.secure_url);
+          setOriginalFilename(results.info.original_filename);
         }}
       >
         {({ open }) => {
@@ -42,6 +45,7 @@ export default function Page() {
           <div className="w-100 h-100">
             <img src={secureUrl} alt="Uploaded image" />
           </div>
+          <p>Selected file: {originalFilename}</p>
           <p>{secureUrl}</p>
           <button
             onClick={handleOnClick}
