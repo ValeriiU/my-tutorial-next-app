@@ -4,7 +4,7 @@ import { CldUploadWidget } from "next-cloudinary";
 import { useState } from "react";
 
 export default function Page() {
-  const [resource, setResource] = useState();
+  const [secureUrl, setSecureUrl] = useState("");
 
   // console.log(imageUrl);
   // const myPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
@@ -14,7 +14,14 @@ export default function Page() {
   return (
     <>
       <p>Customers Page</p>
-      <CldUploadWidget uploadPreset="imhlj8iy" options={{ folder: "my-test" }}>
+      <CldUploadWidget
+        uploadPreset="imhlj8iy"
+        options={{ folder: "my-test" }}
+        onSuccess={(results) => {
+          console.log("secure_url", results.info.secure_url);
+          setSecureUrl(results.info.secure_url);
+        }}
+      >
         {({ open }) => {
           return (
             <button
@@ -26,6 +33,15 @@ export default function Page() {
           );
         }}
       </CldUploadWidget>
+
+      {secureUrl && (
+        <>
+          <div className="w-100 h-100">
+            <img src={secureUrl} alt="Uploaded image" />
+          </div>
+          <p>{secureUrl}</p>
+        </>
+      )}
 
       {/* <CldUploadWidget
         uploadPreset="imhlj8iy"
