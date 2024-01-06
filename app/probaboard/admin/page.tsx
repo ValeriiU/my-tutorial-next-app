@@ -26,6 +26,11 @@ interface CloudinaryResource {
 }
 
 async function AdminPage() {
+  // const { CLOUDINARY_UPLOAD_PRESET } = process.env;
+  // console.log(CLOUDINARY_UPLOAD_PRESET);
+  // const myPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
+  // console.log(myPreset);
+
   const { resources: images } = await cloudinary.api.resources_by_tag(
     "nextjs-server-actions-upload-images",
     { context: true }

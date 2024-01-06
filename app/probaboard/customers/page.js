@@ -5,6 +5,9 @@ import { useState } from "react";
 
 export default function Page() {
   const [resource, setResource] = useState();
+  // const myPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
+  // const { CLOUDINARY_UPLOAD_PRESET } = process.env;
+  // console.log(CLOUDINARY_UPLOAD_PRESET);
 
   return (
     <>
@@ -27,7 +30,7 @@ export default function Page() {
             setResource(undefined);
             open();
           }
-          return <button onClick={handleOnClick}>Upload 2 an Image</button>;
+          return <button onClick={handleOnClick}>Upload 3 an Image</button>;
         }}
       </CldUploadWidget>
     </>
