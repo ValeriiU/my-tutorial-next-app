@@ -14,13 +14,20 @@ export default function Page() {
   return (
     <>
       <p>Customers Page</p>
-      {/* <CldUploadWidget uploadPreset="imhlj8iy">
+      <CldUploadWidget uploadPreset="imhlj8iy" options={{ folder: "my-test" }}>
         {({ open }) => {
-          return <button onClick={() => open()}>Upload 1 an Image</button>;
+          return (
+            <button
+              onClick={() => open()}
+              className="inline-block py-2 px-4 rounded-full font-semibold uppercase text-white bg-slate-600 hover:bg-slate-500"
+            >
+              Upload Image
+            </button>
+          );
         }}
-      </CldUploadWidget> */}
+      </CldUploadWidget>
 
-      <CldUploadWidget
+      {/* <CldUploadWidget
         uploadPreset="imhlj8iy"
         onSuccess={(result, { widget }) => {
           setResource(result?.info);
@@ -42,7 +49,7 @@ export default function Page() {
             </button>
           );
         }}
-      </CldUploadWidget>
+      </CldUploadWidget> */}
       {/* <p>{imageUrl}</p> */}
     </>
   );
