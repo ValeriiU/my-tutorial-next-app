@@ -56,7 +56,7 @@ const HeaderPage = () => {
                     stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   >
                     <circle cx="11" cy="11" r="8"></circle>
                     <path d="m21 21-4.3-4.3"></path>
