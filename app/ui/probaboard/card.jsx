@@ -11,7 +11,7 @@ export default async function ItemCards() {
       <h2> Item Cards </h2>
 
       <div className="flex flex-wrap relative list-none gap-3  p-0 mb-0 justify-around">
-        {CardsCatalog.map((fetchCatalog, i) => {
+        {CardsCatalog.map((fetchCatalog, index) => {
           return (
             <ul
               key={fetchCatalog.id}
