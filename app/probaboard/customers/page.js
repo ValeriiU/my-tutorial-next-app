@@ -3,6 +3,12 @@
 import { CldUploadWidget } from "next-cloudinary";
 import { useState } from "react";
 
+//"use server";
+// export const metadata = {
+//   title: "Admin",
+//   description: "My Admin Page",
+// };
+
 export default function Page() {
   const [secureUrl, setSecureUrl] = useState("");
   const [originalFilename, setOriginalFilename] = useState("");
