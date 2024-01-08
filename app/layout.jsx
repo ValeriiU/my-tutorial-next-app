@@ -1,4 +1,4 @@
-import SideNav from "../app/ui/probaboard/sidenav";
+import SideNav from "./ui/probaboard/sidenav";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
