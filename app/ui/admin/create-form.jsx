@@ -47,26 +47,28 @@ export default function CreateForm({ myPreset }) {
             <p className="mb-2 block text-sm font-medium">Product image</p>
             {secureUrl && (
               <>
-                <div className="mb-4 block w-[100px] h-[100px] border border-gray-200 ">
-                  <img src={secureUrl} alt="Product image" />
+                <div className="mb-2 flex items-center justify-center overflow-hidden block w-[100px] h-[100px] border border-gray-200 ">
+                  <img
+                    src={secureUrl}
+                    alt="Product image"
+                    className="block object-cover h-full object-center"
+                  />
                 </div>
 
-                <div className="mb-4">
-                  <label
-                    htmlFor="image"
-                    className="mb-2 block text-sm font-medium"
-                  >
-                    Image url selected file - "{originalFilename}"
-                  </label>
-                  <div className="relative mt-2 rounded-md">
-                    <input
-                      id="image"
-                      name="image"
-                      type="text"
-                      value={secureUrl}
-                      className="peer block w-full rounded-md border border-gray-200 py-2 pl-5 text-sm outline-2 placeholder:text-gray-500"
-                    />
-                  </div>
+                <label
+                  htmlFor="image"
+                  className="mb-2 block text-sm font-medium"
+                >
+                  Image url selected file - "{originalFilename}"
+                </label>
+                <div className="relative mt-2 rounded-md">
+                  <input
+                    id="image"
+                    name="image"
+                    type="text"
+                    value={secureUrl}
+                    className="peer block w-full rounded-md border border-gray-200 py-2 pl-5 text-sm outline-2 placeholder:text-gray-500"
+                  />
                 </div>
               </>
             )}
