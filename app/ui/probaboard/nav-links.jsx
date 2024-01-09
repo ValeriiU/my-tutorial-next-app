@@ -24,10 +24,10 @@ const links = [
         name: 'Customers',
         href: '/probaboard/customers' 
   },
-  {
-        name: 'Card',
-        href: '/probaboard/card' 
-  },
+  // {
+  //       name: 'Card',
+  //       href: '/probaboard/card' 
+  // },
 
 ];
 

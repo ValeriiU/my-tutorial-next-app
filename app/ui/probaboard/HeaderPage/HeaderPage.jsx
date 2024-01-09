@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useSearchParams } from 'next/navigation';
+import searchOutline from  '../../../../app/public/shoppingCart.svg'
 // import Search from './app/ui/probaboard/search';
 
 const HeaderPage = () => {
@@ -50,15 +51,7 @@ const HeaderPage = () => {
       </div>
 
         <ul className="flex h-[48px] grow items-center justify-center bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
-          {/* <li>
-            <Link className="flex h-[48px] grow items-center justify-center bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href='#'>
-
-            </Link>
-          </li> */}
-          {/* <li>
-            <Link className="flex h-[48px] grow items-center justify-center  bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href='#'>
-            </Link>
-          </li> */}
+       
           <li>
             <Link className="" href='#'>
             </Link>
