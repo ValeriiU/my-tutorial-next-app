@@ -3,15 +3,17 @@
 import { useFormStatus } from "react-dom";
 import { CldUploadWidget } from "next-cloudinary";
 import { useState } from "react";
+import { createProduct } from "../../lib/actions";
 
 export default function CreateForm({ myPreset }) {
   const { pending } = useFormStatus();
   const [secureUrl, setSecureUrl] = useState("");
   const [originalFilename, setOriginalFilename] = useState("");
+  console.log(secureUrl);
 
   return (
     <div className="relative">
-      <form>
+      <form action={createProduct}>
         <div>
           <div className="mb-4">
             <label htmlFor="name" className="mb-2 block text-sm font-medium">
