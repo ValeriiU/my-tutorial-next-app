@@ -9,7 +9,7 @@ SELECT make,
        prise,
        img_url
 FROM catalog_list
-WHERE id = 2;
+WHERE id = 4;
  `
 
     const fetchCatalog = data.rows;
