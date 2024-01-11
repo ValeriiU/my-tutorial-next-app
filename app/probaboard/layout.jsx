@@ -5,12 +5,12 @@ import HeaderPage from '../ui/probaboard/HeaderPage/HeaderPage';
 import FooterPage from '../ui/probaboard/FooterPage/FooterPage';
 import { Suspense } from 'react';
  
-export default function Layout({ title, children }) {
+export default function Layout({ children }) {
   return (
     <Suspense>
       <div className="flex-col md:flex-row p-5 ">
         <header>
-          <title>{title ? title + ' E-Shop' : "E-Shop"} </title>
+          {/* <title>{title ? title + ' E-Shop' : "E-Shop"} </title> */}
             <HeaderPage />
         </header> 
 

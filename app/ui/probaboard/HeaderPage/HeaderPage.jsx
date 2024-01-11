@@ -31,7 +31,7 @@ const HeaderPage = () => {
               <div className="absolute inset-y-2.5 right-[10px] ">
                   <button type="submit" className="inline-flex aspect-square p-auto w-10 items-center justify-center text-neutral-500 hover:text-blue-600 group-invalid:pointer-events-none group-invalid:opacity-80">
                     <span className="absolute w-1 h-1 p-0 m-0 overflow-hidden clip-rect(0, 0, 0, 0) whitespace-nowrap border-0">search</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className=" h-5 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className=" h-5 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="11" cy="11" r="8"></circle>
                       <path d="m21 21-4.3-4.3"></path>
                     </svg>
@@ -51,14 +51,13 @@ const HeaderPage = () => {
       </div>
 
         <ul className="flex h-[48px] grow items-center justify-center bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
-       
           <li>
             <Link className="" href='#'>
             </Link>
           </li>
         </ul>
       </div>
-  
+
   );
 };
 
