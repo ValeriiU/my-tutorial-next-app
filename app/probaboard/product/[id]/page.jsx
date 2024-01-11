@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <div>
-      <p>{product.title}</p>
+      <p>product.id</p>
         
      </div>
 

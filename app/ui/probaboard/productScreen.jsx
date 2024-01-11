@@ -13,7 +13,7 @@ export default  function  ProductScreen(){
 
     return (
      <div>
-        <h1>{product.title} </h1>
+        <h1>ghbdtn </h1>
      </div>
 
     )
