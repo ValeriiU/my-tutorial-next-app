@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
+    domains: ['cdn.dummyjson.com'],// Для dataJson
   },
 };
 

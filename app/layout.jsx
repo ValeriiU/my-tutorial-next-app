@@ -1,4 +1,4 @@
-import SideNav from "./ui/probaboard/sidenav";
+// import SideNav from "./ui/probaboard/sidenav";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -14,10 +14,7 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-
-      <body className="">{children}
-
-      </body>
+      <body >{children}</body>
     </html>
   );
 }

@@ -12,10 +12,12 @@ const links = [
     name: "Favorites",
     href: "/probaboard/favorites",
   },
+
   {
     name: "Invoices",
     href: "/probaboard/invoices",
   },
+
 
   {
     name: "Customers",
