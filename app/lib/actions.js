@@ -17,7 +17,7 @@ export async function createProduct(formData) {
     await sql`
           INSERT INTO public.catalog_list (make, prise, img_url)
           VALUES (${make}, ${prise}, ${img_url})
-          returning id
+          
         `;
     return {
       message: "Create new product.",
