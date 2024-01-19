@@ -6,7 +6,7 @@ const ListSkeleton = () => {
   return (
     <>
       {/* <NavigateToBack /> */}
-      <div className="group flex flex-col h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white relative border-neutral-200 dark:border-neutral-200>">
+      <div className="listSkeleton flex flex-col h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white relative border-neutral-200 dark:border-neutral-200>">
         <div className="flex flex-col">
           <Image
             src={ImgNoImage}
