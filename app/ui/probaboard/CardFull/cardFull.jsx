@@ -3,7 +3,7 @@ import * as React from "react";
 import Image from "next/image";
 // import clsx from "clsx";
 import Link from "next/link";
-import TrendingSlider from "../../TrendingSlider/TrendingSlider";
+// import TrendingSlider from "../../TrendingSlider/TrendingSlider";
 
 // import NavigateToBack from "../../../ui/probaboard/Card/ButtonAddProductToCart";
 // import ButtonAddProductCart from "../../../ui/probaboard/Card/ButtonAddProductToCart";
@@ -11,7 +11,7 @@ import TrendingSlider from "../../TrendingSlider/TrendingSlider";
 
 export default async function CardFull({ product }) {
   // Remove props
-
+// console.log(product);
   return (
     <div className="relative flex flex-col ">
       <div className="flex  flex-wrap p-5  ">
@@ -26,9 +26,9 @@ export default async function CardFull({ product }) {
               height={256}
             />
           </Link>
-          <TrendingSlider />
+          {/* <TrendingSlider product={product} key={product.id} /> */}
         </div>
-     
+
         <div className="flex flex-col items-start m-5 size-2.5 w-[250px] ">
           {/* <Link href={`probaboard/product/${product.id}`}> */}
           <div>
@@ -56,4 +56,4 @@ export default async function CardFull({ product }) {
   );
     
 }
- console.log(TrendingSlider);
+//  console.log(TrendingSlider());

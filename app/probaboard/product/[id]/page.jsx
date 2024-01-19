@@ -2,7 +2,7 @@
 import dataJson from "../../../lib/dataJson";
 // import Card from "../../../ui/probaboard/Card/card";
 import NavigateToBack from "../../../ui/probaboard/NavigateToBack/NavigateToBack";
-// import ButtonAddProductCart from "../../../ui/probaboard/Card/buttonAddProductToCart";
+import ButtonAddProductCart from "../../../ui/probaboard/Card/buttonAddProductToCart";
 import CardFull from "../../../ui/probaboard/CardFull/cardFull";
 import TrendingSlider from "../../../ui/TrendingSlider/TrendingSlider";
 // import HeartNormal from "../../../public/heart-normal.svg"
@@ -13,7 +13,7 @@ import TrendingSlider from "../../../ui/TrendingSlider/TrendingSlider";
 // import Image from "next/image";
 
 export default function Page({ params }) {
-  console.log(params);
+  // console.log(params);
   const id = Number(params.id);
   const productById = dataJson.products.find((item) => item.id === id);
   return (
@@ -21,9 +21,14 @@ export default function Page({ params }) {
       <NavigateToBack />
       <div className="flex flex-row text-decoration-none p-0 w-[auto] h-{auto} mt-5 mb-0 ml-0 mr-0 cursor-pointer  border  shadow-lg rounded-lg border-solid border-gray-300 ">
         <CardFull product={productById} key={productById.id} />
+        <ButtonAddProductCart
+          // product={product.id}
+          // key={product.id}
+        ></ButtonAddProductCart>
 
+        
       </div>
-      <div className="flex flex-row text-decoration-none p-0 w-[auto] h-{auto} mt-5 mb-0 ml-0 mr-0 cursor-pointer  border  shadow-lg rounded-lg border-solid border-gray-300 ">
+      <div className="flex flex-row text-decoration-none p-0 w-[auto] h-{auto} mt-1 mb-0 ml-0 mr-0 cursor-pointer  border  shadow-lg rounded-lg border-solid border-gray-300 ">
         <TrendingSlider product={productById} key={productById.id} />
       </div>
     </section>

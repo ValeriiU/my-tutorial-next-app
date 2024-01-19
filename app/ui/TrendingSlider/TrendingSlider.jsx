@@ -38,33 +38,18 @@ const SliderWindow = ({ images, onClose }) => {
   );
 };
 
-const TrendingSlider = (product) => {
-   console.log(product);
-  const dataJson = {
-
-    thumbnail: "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-    images: [
-      "https://cdn.dummyjson.com/product-images/1/1.jpg",
-      "https://cdn.dummyjson.com/product-images/1/2.jpg",
-      "https://cdn.dummyjson.com/product-images/1/3.jpg",
-      "https://cdn.dummyjson.com/product-images/1/4.jpg",
-      "https://cdn.dummyjson.com/product-images/2/1.jpg",
-      "https://cdn.dummyjson.com/product-images/2/2.jpg",
-      "https://cdn.dummyjson.com/product-images/2/3.jpg",
-    ],
-  };
-  const fullImages = dataJson.images;
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleSlideLeft = () => {
+const TrendingSlider = ({product}) => {
+  // console.log({ product});
+  const { images } = product;
+   const [currentIndex, setCurrentIndex] = useState(0); 
+   const handleSlideLeft = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + fullImages.length) % fullImages.length
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
 
   const handleSlideRight = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % fullImages.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   return (
@@ -80,7 +65,7 @@ const TrendingSlider = (product) => {
 
               <div className="overflow-y-hidden w-full flex flex-row  h-full mx-auto">
                 <section className="slider-section flex flex-row max-w-250 mx-auto h-full justify-center ">
-                  {fullImages
+                  {images
                     .slice(currentIndex, currentIndex + 4)
                     .map((item, index) => (
                       <div
@@ -93,13 +78,13 @@ const TrendingSlider = (product) => {
                             alt={`product ${index}`}
                             width={50}
                             height={50}
-                  
+
                           />
                         </div>
                       </div>
                     ))}
                 </section>
-             
+
               </div>
               <button title="scroll right" onClick={handleSlideRight}>
                 <AiOutlineArrowRight />
